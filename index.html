@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Yahav Store - חנות אונליין מודרנית למוצרים שימושיים ומגניבים." />
+  <meta name="theme-color" content="#0b1020" />
+  <title>Yahav Store | חנות אונליין</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="preconnect" href="https://images.unsplash.com" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="promo-bar">
+    <span>🚚 משלוח חינם בקנייה מעל ₪199</span>
+    <span class="promo-divider">•</span>
+    <span>🔒 תשלום מאובטח</span>
+    <span class="promo-divider">•</span>
+    <span>↩️ החזרה עד 30 יום</span>
+  </div>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="Yahav Store">
+        <span class="brand-mark">Y</span>
+        <span>
+          <strong>Yahav</strong>
+          <small>STORE</small>
+        </span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="ניווט ראשי">
+        <a href="#home">בית</a>
+        <a href="#products">מוצרים</a>
+        <a href="#why-us">למה אנחנו</a>
+        <a href="#reviews">ביקורות</a>
+        <a href="#faq">שאלות נפוצות</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeBtn" aria-label="החלפת מצב תצוגה" title="מצב תצוגה">☾</button>
+        <button class="cart-btn" id="openCartBtn" aria-label="פתיחת עגלת קניות">
+          <span>🛒</span>
+          <span class="cart-text">עגלה</span>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="פתיחת תפריט">☰</button>
+      </div>
+    </div>
+
+    <div class="mobile-nav" id="mobileNav">
+      <a href="#home">בית</a>
+      <a href="#products">מוצרים</a>
+      <a href="#why-us">למה אנחנו</a>
+      <a href="#reviews">ביקורות</a>
+      <a href="#faq">שאלות נפוצות</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-orb hero-orb-1"></div>
+      <div class="hero-orb hero-orb-2"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow">✨ מוצרים שנבחרו בקפידה</div>
+          <h1>מוצרים מגניבים.<br><span>מחירים שעושים חשק.</span></h1>
+          <p>
+            גלה פריטים שימושיים, חכמים וטרנדיים לבית, ללימודים וליום‑יום — בחנות מהירה,
+            נקייה ונוחה מכל מכשיר.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#products">לכל המוצרים</a>
+            <a class="btn btn-ghost" href="#why-us">למה Yahav Store?</a>
+          </div>
+          <div class="hero-stats">
+            <div><strong>4.9/5</strong><span>דירוג לקוחות</span></div>
+            <div><strong>30 יום</strong><span>החזרות</span></div>
+            <div><strong>24/7</strong><span>הזמנה באתר</span></div>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="hero-card-badge">BEST SELLER</div>
+          <img
+            src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=900&q=85"
+            alt="אוזניות אלחוטיות"
+          />
+          <div class="hero-card-info">
+            <div>
+              <span class="mini-label">הכי נמכר השבוע</span>
+              <h3>NovaSound Pro</h3>
+            </div>
+            <div class="price-stack">
+              <del>₪199</del>
+              <strong>₪129</strong>
+            </div>
+          </div>
+          <button class="btn btn-primary full add-to-cart" data-product-id="1">הוסף לעגלה</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-strip">
+      <div class="container trust-grid">
+        <div class="trust-item"><span>⚡</span><div><strong>אתר מהיר</strong><small>חוויית קנייה חלקה</small></div></div>
+        <div class="trust-item"><span>📦</span><div><strong>מעקב הזמנות</strong><small>עדכון לאורך הדרך</small></div></div>
+        <div class="trust-item"><span>💬</span><div><strong>שירות לקוחות</strong><small>אנחנו כאן לעזור</small></div></div>
+        <div class="trust-item"><span>🔐</span><div><strong>פרטיות</strong><small>בלי שמירת פרטי אשראי</small></div></div>
+      </div>
+    </section>
+
+    <section class="section" id="products">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">המומלצים שלנו</span>
+            <h2>מוצרים פופולריים</h2>
+          </div>
+          <div class="filter-wrap" role="group" aria-label="סינון מוצרים">
+            <button class="filter-btn active" data-filter="all">הכול</button>
+            <button class="filter-btn" data-filter="tech">טכנולוגיה</button>
+            <button class="filter-btn" data-filter="home">בית</button>
+            <button class="filter-btn" data-filter="lifestyle">לייף סטייל</button>
+          </div>
+        </div>
+
+        <div class="products-grid" id="productsGrid"></div>
+      </div>
+    </section>
+
+    <section class="feature-banner">
+      <div class="container feature-banner-inner">
+        <div>
+          <span class="eyebrow light">מבצע לזמן מוגבל</span>
+          <h2>קונים 2 מוצרים? מקבלים 10% הנחה</h2>
+          <p>השתמש בקוד <strong>YAHAV10</strong> בעגלת הקניות.</p>
+        </div>
+        <a class="btn btn-light" href="#products">אני רוצה</a>
+      </div>
+    </section>
+
+    <section class="section" id="why-us">
+      <div class="container">
+        <div class="section-head centered">
+          <div>
+            <span class="eyebrow">למה דווקא אנחנו</span>
+            <h2>קנייה פשוטה בלי כאב ראש</h2>
+            <p class="section-subtitle">כל מה שצריך כדי שחנות אונליין תרגיש אמינה, ברורה ומהירה.</p>
+          </div>
+        </div>
+
+        <div class="benefits-grid">
+          <article class="benefit-card">
+            <div class="benefit-icon">🎯</div>
+            <h3>בחירת מוצרים ממוקדת</h3>
+            <p>אנחנו מציגים רק מוצרים עם שימוש ברור, עיצוב טוב וביקוש אמיתי.</p>
+          </article>
+          <article class="benefit-card">
+            <div class="benefit-icon">🚀</div>
+            <h3>חוויה מהירה</h3>
+            <p>האתר מותאם למובייל ולמחשב, נטען מהר ומאפשר להגיע למוצר בלי להסתבך.</p>
+          </article>
+          <article class="benefit-card">
+            <div class="benefit-icon">🛡️</div>
+            <h3>שקיפות בקנייה</h3>
+            <p>מחיר, כמות, סיכום הזמנה וקופונים מוצגים בצורה ברורה לפני מעבר לתשלום.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section soft-section" id="reviews">
+      <div class="container">
+        <div class="section-head centered">
+          <div>
+            <span class="eyebrow">לקוחות מספרים</span>
+            <h2>ביקורות לדוגמה</h2>
+          </div>
+        </div>
+
+        <div class="reviews-grid">
+          <article class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>"האתר ממש נוח בטלפון והמוצר נראה בדיוק כמו בתמונה. ההזמנה הייתה פשוטה."</p>
+            <div class="review-user"><div class="avatar">ד</div><div><strong>דניאל</strong><small>לקוח לדוגמה</small></div></div>
+          </article>
+          <article class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>"אהבתי שאפשר לראות ישר את המחיר ואת העגלה בלי לעבור מיליון מסכים."</p>
+            <div class="review-user"><div class="avatar">נ</div><div><strong>נועה</strong><small>לקוחה לדוגמה</small></div></div>
+          </article>
+          <article class="review-card">
+            <div class="stars">★★★★☆</div>
+            <p>"עיצוב נקי ומגניב, והקופון בעגלה עובד מעולה. אחלה בסיס לחנות אמיתית."</p>
+            <div class="review-user"><div class="avatar">א</div><div><strong>איתי</strong><small>לקוח לדוגמה</small></div></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="container narrow">
+        <div class="section-head centered">
+          <div>
+            <span class="eyebrow">שאלות נפוצות</span>
+            <h2>לפני שמזמינים</h2>
+          </div>
+        </div>
+
+        <div class="faq-list">
+          <details>
+            <summary>כמה זמן לוקח למשלוח להגיע?</summary>
+            <p>זהו אתר דמו. בחנות אמיתית יש לעדכן כאן את זמני המשלוח בהתאם לספק ולמדינת היעד.</p>
+          </details>
+          <details>
+            <summary>אפשר להחזיר מוצר?</summary>
+            <p>כן, אם מדיניות החנות שלך מאפשרת זאת. מומלץ לפרסם מדיניות החזרה ברורה לפני הפעלת החנות.</p>
+          </details>
+          <details>
+            <summary>האם האתר כבר מקבל אשראי?</summary>
+            <p>לא. GitHub Pages הוא אתר סטטי. כדי לקבל תשלומים אמיתיים צריך לחבר שירות סליקה חיצוני מאובטח.</p>
+          </details>
+          <details>
+            <summary>אפשר להחליף מוצרים ומחירים?</summary>
+            <p>כן. כל המוצרים נמצאים בקובץ <code>script.js</code> וקל מאוד לשנות שמות, מחירים, תמונות ותיאורים.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <div class="container newsletter-inner">
+        <div>
+          <span class="eyebrow light">הישארו מעודכנים</span>
+          <h2>מבצעים חדשים ישר למייל</h2>
+          <p>טופס דמו בלבד — לא שולח מידע לשרת.</p>
+        </div>
+        <form id="newsletterForm" class="newsletter-form">
+          <input id="newsletterEmail" type="email" placeholder="האימייל שלך" required />
+          <button class="btn btn-light" type="submit">הרשמה</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand footer-brand" href="#home">
+          <span class="brand-mark">Y</span>
+          <span><strong>Yahav</strong><small>STORE</small></span>
+        </a>
+        <p>חנות דמו מודרנית שנבנתה עבור GitHub Pages. החלף מוצרים, פרטים וקישורים לפני שימוש מסחרי.</p>
+      </div>
+
+      <div>
+        <h4>ניווט</h4>
+        <a href="#products">מוצרים</a>
+        <a href="#why-us">למה אנחנו</a>
+        <a href="#reviews">ביקורות</a>
+        <a href="#faq">שאלות נפוצות</a>
+      </div>
+
+      <div>
+        <h4>מידע</h4>
+        <a href="#" data-toast="יש להוסיף עמוד מדיניות משלוחים אמיתי.">משלוחים</a>
+        <a href="#" data-toast="יש להוסיף עמוד החזרות אמיתי.">החזרות</a>
+        <a href="#" data-toast="יש להוסיף מדיניות פרטיות אמיתית.">פרטיות</a>
+        <a href="#" data-toast="יש להוסיף תנאי שימוש אמיתיים.">תנאי שימוש</a>
+      </div>
+
+      <div>
+        <h4>יצירת קשר</h4>
+        <p class="contact-line">✉️ support@example.com</p>
+        <p class="contact-line">💬 WhatsApp / Instagram</p>
+        <small>החלף את פרטי הדוגמה בפרטים שלך.</small>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>© <span id="year"></span> Yahav Store</span>
+      <span>נבנה כאתר סטטי ל‑GitHub Pages</span>
+    </div>
+  </footer>
+
+  <div class="overlay" id="overlay"></div>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-label="עגלת קניות">
+    <div class="cart-header">
+      <div>
+        <span class="mini-label">ההזמנה שלך</span>
+        <h2>עגלת קניות</h2>
+      </div>
+      <button class="icon-btn" id="closeCartBtn" aria-label="סגירת עגלה">✕</button>
+    </div>
+
+    <div class="cart-items" id="cartItems"></div>
+
+    <div class="coupon-box">
+      <input id="couponInput" type="text" placeholder="קוד קופון" />
+      <button id="applyCouponBtn">הפעל</button>
+    </div>
+    <div class="coupon-message" id="couponMessage"></div>
+
+    <div class="cart-summary">
+      <div><span>סכום ביניים</span><strong id="subtotal">₪0</strong></div>
+      <div><span>הנחה</span><strong id="discount">−₪0</strong></div>
+      <div><span>משלוח</span><strong id="shipping">₪0</strong></div>
+      <div class="cart-total"><span>סה״כ</span><strong id="total">₪0</strong></div>
+      <button class="btn btn-primary full" id="checkoutBtn">המשך לתשלום</button>
+      <small class="checkout-note">דמו בלבד — אין חיוב אמיתי.</small>
+    </div>
+  </aside>
+
+  <div class="modal" id="checkoutModal" aria-hidden="true">
+    <div class="modal-card">
+      <button class="icon-btn modal-close" id="closeModalBtn" aria-label="סגירה">✕</button>
+      <div class="modal-icon">✅</div>
+      <span class="eyebrow">האתר מוכן לשלב הבא</span>
+      <h2>העגלה עובדת — אבל התשלום הוא דמו</h2>
+      <p>
+        כדי להפוך את החנות לאמיתית צריך לחבר ספק מוצרים ושירות סליקה חיצוני. לעולם אל תשמור פרטי אשראי
+        ישירות בקוד JavaScript או ב‑GitHub.
+      </p>
+      <button class="btn btn-primary full" id="modalOkBtn">הבנתי</button>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
