@@ -257,6 +257,17 @@ footer{border-top:1px solid var(--line);padding:60px 0 22px;background:#fff}
 .coupon input{flex:1;min-width:0;border:1px solid var(--line);border-radius:11px;padding:9px 11px;outline:0}
 .coupon button{border:1px solid var(--line);background:var(--surface);border-radius:11px;padding:0 13px;cursor:pointer;font-weight:800}
 .coupon-msg{min-height:17px;margin:5px 21px 0;color:var(--green);font-size:11px}
+.coupon-breakdown{
+  margin:10px 21px 2px;padding:13px 14px;border:1px solid #dfe9e2;border-radius:14px;
+  background:#f5fbf7;animation:couponPop .28s ease both
+}
+.coupon-breakdown[hidden]{display:none}
+.coupon-breakdown>div{display:flex;justify-content:space-between;gap:14px;color:#6f756f;font-size:12px;margin:5px 0}
+.coupon-breakdown .saved{color:#1f9d60}
+.coupon-breakdown .after{margin-top:10px;padding-top:10px;border-top:1px solid #dfe9e2;color:#111;align-items:baseline}
+.coupon-breakdown .after strong{font:900 21px "Heebo"}
+@keyframes couponPop{from{opacity:0;transform:translateY(5px) scale(.99)}to{opacity:1;transform:none}}
+
 .cart-summary{border-top:1px solid var(--line);padding:17px 21px 20px}
 .cart-summary>div{display:flex;justify-content:space-between;color:#777;margin:6px 0}
 .cart-summary .total{color:#111;font-size:19px;margin:13px 0}

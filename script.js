@@ -177,8 +177,15 @@ function renderCart(){
 
   if(state.coupon){
     $("#couponInput").value="YAHAV10";
-    $("#couponMsg").textContent="✓ YAHAV10 פעיל — 10% הנחה";
-  }else $("#couponMsg").textContent="";
+    $("#couponMsg").textContent=`✓ YAHAV10 פעיל — חסכת ${money(discount)}`;
+    $("#couponBreakdown").hidden=false;
+    $("#couponBefore").textContent=money(subtotal + shipping);
+    $("#couponSaved").textContent=`−${money(discount)}`;
+    $("#couponAfter").textContent=money(total);
+  }else{
+    $("#couponMsg").textContent="";
+    $("#couponBreakdown").hidden=true;
+  }
 }
 
 function openCart(){
@@ -209,7 +216,13 @@ $("#backdrop").onclick=closeCart;
 
 $("#couponBtn").onclick=()=>{
   if($("#couponInput").value.trim().toUpperCase()==="YAHAV10"){
-    state.coupon=true; persist(); renderCart(); toast("10% הנחה הופעלה");
+    state.coupon=true; persist(); renderCart();
+    const currentRows=cartRows();
+    const currentSubtotal=currentRows.reduce((s,r)=>s+r.product.price*r.qty,0);
+    const currentDiscount=currentSubtotal*.10;
+    const currentShipping=currentSubtotal===0||currentSubtotal>=49?0:9.90;
+    const currentTotal=Math.max(0,currentSubtotal-currentDiscount+currentShipping);
+    toast(`הקופון הופעל ✓ לתשלום: ${money(currentTotal)}`);
   }else{
     state.coupon=false; persist(); renderCart();
     $("#couponMsg").textContent="הקוד לא תקין — נסה YAHAV10";
