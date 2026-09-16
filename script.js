@@ -2,55 +2,63 @@
 const products = [
   {
     id:1,
-    name:"כיסוי סיליקון בהיר",
+    name:"כיסוי סיליקון בהיר — iPhone 13 Pro",
     category:"cases",
     categoryLabel:"כיסוי",
     price:14.90,
     oldPrice:19.90,
-    badge:"LOW PRICE",
+    badge:"13 PRO",
     image:"assets/products/cream-case-alt.jpg",
-    description:"כיסוי סיליקון בהיר ונקי עם אזור מצלמות גדול.",
-    compatibility:"התאמה משוערת: iPhone Pro / Pro Max מדורות דומים — מומלץ לאשר לפני הזמנה."
+    description:"כיסוי סיליקון בהיר במראה מינימליסטי עם הגנה מלאה סביב אזור המצלמות.",
+    compatibility:"זיהוי משוער חזק: iPhone 13 Pro ‏6.1″ (2021). לא מיועד ל־iPhone 13 הרגיל עם שתי מצלמות.",
+    details:"מבנה החורים תואם לשלוש המצלמות, לפלאש ול־LiDAR של iPhone 13 Pro. מידות iPhone 13 Pro הן 146.7×71.5 מ״מ; גרסת Pro Max גדולה יותר ולכן אינה אותה מידה.",
+    confidence:"ביטחון גבוה"
   },
   {
     id:2,
-    name:"כיסוי שקוף קלאסי",
+    name:"כיסוי שקוף — iPhone X / XS",
     category:"cases",
     categoryLabel:"כיסוי",
     price:9.90,
     oldPrice:14.90,
-    badge:"BEST VALUE",
+    badge:"X / XS",
     image:"assets/products/clear-case.jpg",
-    description:"כיסוי שקוף פשוט למראה נקי ושמירה על העיצוב המקורי של הטלפון.",
-    compatibility:"התאמה משוערת: iPhone X / XS או דגם דומה — מומלץ לאשר לפני הזמנה."
+    description:"כיסוי שקוף פשוט שמציג את צבע הטלפון, עם מסגרת מוגבהת והגנה סביב מערך המצלמות האנכי.",
+    compatibility:"מתאים בסבירות גבוהה ל־iPhone X / iPhone XS ‏5.8″. שני הדגמים בעלי מידות גוף זהות.",
+    details:"iPhone X ו־XS הם בגודל 143.6×70.9×7.7 מ״מ. ל־XS בליטת מצלמה מעט גדולה יותר, לכן בכיסוי עם חורי מצלמה צמודים כדאי לוודא פיזית לפני משלוח.",
+    confidence:"ביטחון בינוני־גבוה"
   },
   {
     id:3,
-    name:"כיסוי עם תא לכרטיס",
+    name:"כיסוי Wallet עם תא לכרטיס — iPhone 13 Pro",
     category:"cases",
-    categoryLabel:"כיסוי",
+    categoryLabel:"כיסוי Wallet",
     price:19.90,
     oldPrice:29.90,
-    badge:"PREMIUM",
+    badge:"13 PRO",
     image:"assets/products/card-holder-case.jpg",
-    description:"כיסוי שקוף־מעושן מחוזק עם תא אחורי שימושי לכרטיס.",
-    compatibility:"התאמה משוערת: iPhone Pro / Pro Max מדורות דומים — מומלץ לאשר לפני הזמנה."
+    description:"כיסוי שקוף־מעושן עם תא אחורי לכרטיס, חיזוקי פינות והגנה סביב העדשות.",
+    compatibility:"זיהוי משוער חזק: iPhone 13 Pro ‏6.1″ (2021).",
+    details:"מצאנו כיסוי Wallet כמעט זהה שנמכר עבור iPhone 13 Pro: תא כרטיס אחורי, TPU שקוף, פינות סופגות זעזועים וחורים מדויקים. מבנה המצלמות בתמונה תואם גם הוא ל־13 Pro.",
+    confidence:"ביטחון גבוה"
   },
   {
     id:4,
-    name:"טבעת אחיזה מתכתית",
+    name:"טבעת אחיזה מתכתית אוניברסלית",
     category:"accessories",
     categoryLabel:"אביזר",
     price:4.90,
     oldPrice:7.90,
-    badge:"ADD-ON",
+    badge:"UNIVERSAL",
     image:"assets/products/ring-holder.jpg",
-    description:"טבעת אחיזה קטנה שמודבקת לגב הכיסוי ועוזרת להחזיק את הטלפון.",
-    compatibility:"אביזר אוניברסלי בהדבקה — מתאים לרוב הכיסויים עם משטח אחורי שטוח."
+    description:"טבעת אחיזה מתכתית בהדבקה לשימוש נוח יותר ביד וכסטנד קטן לצפייה.",
+    compatibility:"אוניברסלית — מתאימה לרוב הכיסויים עם משטח אחורי שטוח, חלק ונקי.",
+    details:"הדבקה נוטה להיות טובה יותר על פלסטיק/TPU קשיח ומשטח חלק. על סיליקון רך, עור, בד או משטח מחוספס האחיזה עשויה להיות חלשה יותר.",
+    confidence:"אוניברסלי"
   },
   {
     id:5,
-    name:"באנדל כיסוי + טבעת",
+    name:"באנדל iPhone 13 Pro — כיסוי + טבעת",
     category:"accessories",
     categoryLabel:"באנדל",
     price:17.90,
@@ -58,7 +66,9 @@ const products = [
     badge:"BUNDLE",
     image:"assets/products/cream-case-ring.jpg",
     description:"הכיסוי הבהיר יחד עם טבעת אחיזה במחיר נמוך יותר מקנייה בנפרד.",
-    compatibility:"התאמת הכיסוי משוערת. הטבעת אוניברסלית בהדבקה."
+    compatibility:"הכיסוי מזוהה כ־iPhone 13 Pro ‏6.1″; הטבעת אוניברסלית.",
+    details:"מומלץ לחבר את הטבעת רק אחרי ניקוי וייבוש של גב הכיסוי. בגלל שמדובר במשטח סיליקון, חוזק ההדבקה תלוי בסוג הציפוי.",
+    confidence:"ביטחון גבוה"
   }
 ];
 
@@ -104,7 +114,8 @@ function renderProducts(){
         <div class="product-meta"><span>${p.categoryLabel}</span><span>במלאי</span></div>
         <h3>${p.name}</h3>
         <p>${p.description}</p>
-        <div class="compat-line">${p.compatibility}</div>
+        <div class="compat-line"><b>${p.confidence}</b><span>${p.compatibility}</span></div>
+        <div class="product-details">${p.details}</div>
         <div class="product-bottom">
           <div class="price"><strong>${money(p.price)}</strong><del>${money(p.oldPrice)}</del></div>
           <button class="add add-to-cart" data-product-id="${p.id}" aria-label="הוסף לעגלה">+</button>
@@ -202,7 +213,7 @@ function openQuick(id){
   $("#quickCategory").textContent=p.categoryLabel;
   $("#quickName").textContent=p.name;
   $("#quickDescription").textContent=p.description;
-  $("#quickCompatibility").textContent=p.compatibility;
+  $("#quickCompatibility").innerHTML=`<b>${p.confidence}</b><br>${p.compatibility}<br><small>${p.details}</small>`;
   $("#quickPrice").textContent=money(p.price);
   $("#quickOldPrice").textContent=money(p.oldPrice);
   $("#quickModal").classList.add("open"); document.body.classList.add("no-scroll");
