@@ -1,181 +1,136 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="he" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Yahav Store — חנות אונליין מודרנית עם מוצרים טרנדיים.">
-  <meta name="theme-color" content="#070a13">
-  <title>Yahav Store — Premium Drop</title>
-  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Yahav Store - כיסויים ואביזרים לטלפון במחירים נוחים.">
+  <title>Yahav Store</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://images.unsplash.com">
   <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;500;600;700;800&family=Heebo:wght@500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="ambient ambient-a"></div>
-  <div class="ambient ambient-b"></div>
-  <div class="noise"></div>
-
-  <div class="announcement">
-    <div class="announcement-track">
-      <span>⚡ FLASH DROP — מוצרים חדשים עלו עכשיו</span>
-      <span>✦ משלוח חינם מעל ₪199</span>
-      <span>✦ קוד YAHAV10 נותן 10% הנחה</span>
-      <span>✦ החזרות עד 30 יום</span>
-      <span>⚡ FLASH DROP — מוצרים חדשים עלו עכשיו</span>
-      <span>✦ משלוח חינם מעל ₪199</span>
-      <span>✦ קוד YAHAV10 נותן 10% הנחה</span>
-      <span>✦ החזרות עד 30 יום</span>
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span>🚚 משלוח חינם מעל ₪49</span>
+      <span>•</span>
+      <span>קוד <b>YAHAV10</b> = 10% הנחה</span>
+      <span>•</span>
+      <span>📦 מחירים קטנים, סטייל גדול</span>
     </div>
   </div>
 
-  <header class="header" id="top">
+  <header class="header">
     <div class="container nav">
-      <a class="brand" href="#top">
-        <span class="brand-logo">Y</span>
-        <span class="brand-copy">
+      <a href="#home" class="brand">
+        <span class="logo">Y</span>
+        <span class="brand-text">
           <b>YAHAV</b>
-          <small>PREMIUM STORE</small>
+          <small>PHONE ACCESSORIES</small>
         </span>
       </a>
 
       <nav class="nav-links">
-        <a href="#products">Shop</a>
-        <a href="#why">Why us</a>
-        <a href="#reviews">Reviews</a>
-        <a href="#faq">FAQ</a>
+        <a href="#home">בית</a>
+        <a href="#products">מוצרים</a>
+        <a href="#bundle">מבצע</a>
+        <a href="#faq">שאלות</a>
       </nav>
 
       <div class="nav-actions">
-        <button class="round-btn search-toggle" aria-label="חיפוש">⌕</button>
-        <button class="round-btn theme-toggle" aria-label="שינוי מצב">◐</button>
-        <button class="cart-pill" id="openCartBtn">
+        <button class="search-btn" id="searchBtn" aria-label="חיפוש">⌕</button>
+        <button class="cart-btn" id="openCart">
           <span>עגלה</span>
-          <span class="cart-count" id="cartCount">0</span>
+          <b id="cartCount">0</b>
         </button>
-        <button class="round-btn mobile-toggle" id="mobileToggle" aria-label="תפריט">☰</button>
+        <button class="menu-btn" id="menuBtn" aria-label="תפריט">☰</button>
       </div>
     </div>
 
     <div class="mobile-menu" id="mobileMenu">
+      <a href="#home">בית</a>
       <a href="#products">מוצרים</a>
-      <a href="#why">למה אנחנו</a>
-      <a href="#reviews">ביקורות</a>
-      <a href="#faq">שאלות נפוצות</a>
+      <a href="#bundle">מבצע</a>
+      <a href="#faq">שאלות</a>
     </div>
 
     <div class="search-panel" id="searchPanel">
-      <div class="container search-box">
+      <div class="container search-panel-inner">
         <span>⌕</span>
-        <input id="globalSearch" type="search" placeholder="חפש מוצר...">
+        <input id="globalSearch" placeholder="חפש כיסוי או אביזר...">
         <button id="closeSearch">✕</button>
       </div>
     </div>
   </header>
 
   <main>
-    <section class="hero">
+    <section class="hero" id="home">
       <div class="container hero-grid">
-        <div class="hero-copy">
-          <div class="hero-kicker"><span></span> PREMIUM DROP 2026</div>
-          <h1>המוצרים שגורמים<br>לכולם לשאול<br><em>“מאיפה זה?”</em></h1>
+        <div class="hero-copy reveal">
+          <span class="eyebrow">NEW • SIMPLE • AFFORDABLE</span>
+          <h1>כיסויים ואביזרים<br><em>שנראים טוב.</em><br>בלי מחיר מוגזם.</h1>
           <p>
-            חנות דרופשיפינג בעיצוב חדשני עם מוצרים טרנדיים, מחיר חד,
-            וחוויית קנייה שמרגישה כמו מותג אמיתי.
+            חנות קטנה ונקייה עם כיסויים ואביזרים לטלפון במחירים שבאמת נעים לקנות בהם.
           </p>
-
           <div class="hero-actions">
-            <a class="cta cta-primary" href="#products">SHOP THE DROP <span>←</span></a>
-            <button class="cta cta-ghost" id="heroCartBtn">פתח עגלה</button>
+            <a class="primary-btn" href="#products">למוצרים <span>←</span></a>
+            <button class="ghost-btn" id="heroCart">פתח עגלה</button>
           </div>
-
-          <div class="hero-proof">
-            <div class="proof-avatars">
-              <span>Y</span><span>A</span><span>H</span><span>+</span>
-            </div>
-            <div>
-              <div class="stars">★★★★★</div>
-              <small>4.9/5 מתוך ביקורות לקוחות</small>
-            </div>
+          <div class="hero-notes">
+            <div><b>₪9.90</b><small>מוצר החל מ־</small></div>
+            <div><b>10%</b><small>הנחה עם YAHAV10</small></div>
+            <div><b>₪49</b><small>משלוח חינם מעל</small></div>
           </div>
         </div>
 
-        <div class="hero-visual">
-          <div class="visual-ring ring-1"></div>
-          <div class="visual-ring ring-2"></div>
-
-          <div class="floating-tag tag-a">
-            <small>הנמכר ביותר</small>
-            <b>#1 THIS WEEK</b>
+        <div class="hero-gallery reveal delay-1">
+          <div class="hero-main-photo product-photo">
+            <img src="assets/products/cream-case-ring.jpg" alt="כיסוי בהיר וטבעת אחיזה">
+            <span class="photo-label">BUNDLE DEAL</span>
           </div>
-
-          <div class="floating-tag tag-b">
-            <span class="live-dot"></span>
-            <div><b>128</b><small>צופים עכשיו</small></div>
-          </div>
-
-          <div class="hero-product-card">
-            <div class="card-top">
-              <span class="chip">NEW DROP</span>
-              <span class="heart">♡</span>
+          <div class="hero-side">
+            <div class="small-photo product-photo">
+              <img src="assets/products/card-holder-case.jpg" alt="כיסוי עם תא לכרטיס">
             </div>
-            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=1200&q=90" alt="NovaSound Pro">
-            <div class="hero-product-info">
-              <div>
-                <small>WIRELESS AUDIO</small>
-                <h3>NovaSound Pro</h3>
-              </div>
-              <div class="hero-price">
-                <del>₪199</del>
-                <strong>₪129</strong>
-              </div>
+            <div class="small-photo product-photo">
+              <img src="assets/products/clear-case.jpg" alt="כיסוי שקוף">
             </div>
-            <button class="hero-add add-to-cart" data-product-id="1">
-              הוסף לעגלה
-              <span>+</span>
-            </button>
           </div>
         </div>
       </div>
+    </section>
 
-      <div class="scroll-hint">
-        <span>SCROLL TO DISCOVER</span>
-        <i></i>
+    <section class="usp">
+      <div class="container usp-grid">
+        <div><span>✓</span><p><b>מחירים נוחים</b><small>בלי לנפח סתם</small></p></div>
+        <div><span>◌</span><p><b>מראה נקי</b><small>פשוט לבחור ולקנות</small></p></div>
+        <div><span>↺</span><p><b>בדיקת התאמה</b><small>מומלץ לאשר דגם לפני הזמנה</small></p></div>
+        <div><span>✦</span><p><b>מוצרים אמיתיים</b><small>התמונות צולמו מהמלאי</small></p></div>
       </div>
     </section>
 
-    <section class="trust-line">
-      <div class="container trust-items">
-        <div><b>01</b><span>משלוח מהיר</span></div>
-        <div><b>02</b><span>מוצרים נבחרים</span></div>
-        <div><b>03</b><span>תשלום מאובטח*</span></div>
-        <div><b>04</b><span>החזרה עד 30 יום</span></div>
-      </div>
-    </section>
-
-    <section class="section products-section" id="products">
+    <section class="section" id="products">
       <div class="container">
-        <div class="section-head">
+        <div class="section-head reveal">
           <div>
-            <span class="micro">CURATED FOR YOU</span>
-            <h2>הדרופ <span>החם</span></h2>
+            <span class="eyebrow">SHOP</span>
+            <h2>המוצרים שלנו</h2>
           </div>
-          <p>מוצרים שבולטים, נראים טוב ומרגישים כמו משהו שבא לך להוסיף לעגלה עכשיו.</p>
+          <p>בחרתי מחירים נמוכים יותר כדי שהמוצרים יהיו הרבה יותר קלים לקנייה.</p>
         </div>
 
-        <div class="shop-toolbar">
+        <div class="toolbar reveal">
           <div class="filters">
             <button class="filter active" data-filter="all">הכול</button>
-            <button class="filter" data-filter="tech">טכנולוגיה</button>
-            <button class="filter" data-filter="home">בית</button>
-            <button class="filter" data-filter="lifestyle">לייף סטייל</button>
+            <button class="filter" data-filter="cases">כיסויים</button>
+            <button class="filter" data-filter="accessories">אביזרים</button>
           </div>
-
           <div class="mini-search">
             <span>⌕</span>
-            <input id="productSearch" placeholder="חיפוש מהיר">
+            <input id="productSearch" placeholder="חיפוש מוצר">
           </div>
         </div>
 
@@ -183,258 +138,160 @@
       </div>
     </section>
 
-    <section class="editorial">
-      <div class="container editorial-grid">
-        <div class="editorial-image">
-          <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=1400&q=90" alt="מוצרי לייף סטייל">
-          <div class="editorial-stamp">
-            <span>YAHAV</span>
-            <b>SELECTED</b>
-          </div>
-        </div>
-        <div class="editorial-copy">
-          <span class="micro">OUR STANDARD</span>
-          <h2>לא מעלים כל מוצר.<br><em>רק מה שעובר את הוייב.</em></h2>
-          <p>
-            כל מוצר באתר מקבל מקום רק אם הוא נראה טוב, מובן בשנייה,
-            ומרגיש כמו משהו שבאמת היית רוצה לקבל בחבילה.
-          </p>
-          <div class="editorial-points">
-            <div><span>✓</span><p><b>פחות עומס</b><small>קטלוג ממוקד ולא אלפי מוצרים חסרי קשר.</small></p></div>
-            <div><span>✓</span><p><b>יותר סטייל</b><small>חנות שנראית כמו מותג ולא כמו עמוד טכני.</small></p></div>
-            <div><span>✓</span><p><b>קנייה ברורה</b><small>מחיר, תמונות, עגלה והנחה — בלי בלגן.</small></p></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section why-section" id="why">
+    <section class="bundle-section" id="bundle">
       <div class="container">
-        <div class="section-head">
-          <div>
-            <span class="micro">WHY YAHAV</span>
-            <h2>הדברים הקטנים<br><span>שעושים הבדל גדול</span></h2>
+        <div class="bundle-card reveal">
+          <div class="bundle-photo product-photo">
+            <img src="assets/products/cream-case-ring.jpg" alt="באנדל כיסוי וטבעת">
           </div>
-          <p>מהירות, אמינות ועיצוב — בלי להרגיש כמו עוד חנות גנרית באינטרנט.</p>
-        </div>
-
-        <div class="feature-grid">
-          <article class="feature feature-wide">
-            <div class="feature-number">01</div>
-            <div>
-              <span class="feature-icon">⚡</span>
-              <h3>Fast by design</h3>
-              <p>האתר בנוי בצורה נקייה וקלה כדי להרגיש מהיר גם במובייל.</p>
+          <div class="bundle-copy">
+            <span class="eyebrow">BUNDLE PRICE</span>
+            <h2>כיסוי + טבעת<br><em>ב־₪17.90</em></h2>
+            <p>במקום לקנות בנפרד, קח את שניהם במחיר קטן יותר.</p>
+            <div class="bundle-pricing">
+              <del>₪19.80</del>
+              <strong>₪17.90</strong>
             </div>
-          </article>
-          <article class="feature">
-            <div class="feature-number">02</div>
-            <span class="feature-icon">✦</span>
-            <h3>Curated</h3>
-            <p>מבחר ממוקד של מוצרים במקום קטלוג מבולגן.</p>
-          </article>
-          <article class="feature">
-            <div class="feature-number">03</div>
-            <span class="feature-icon">↺</span>
-            <h3>Easy returns</h3>
-            <p>מקום ברור למדיניות החזרות ותנאים.</p>
-          </article>
-          <article class="feature">
-            <div class="feature-number">04</div>
-            <span class="feature-icon">⌁</span>
-            <h3>Mobile first</h3>
-            <p>החוויה מותאמת למסכים קטנים ולא רק למחשב.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="offer-section">
-      <div class="container offer-card">
-        <div class="offer-glow"></div>
-        <div>
-          <span class="micro light">LIMITED CODE</span>
-          <h2>10% OFF<br>YOUR FIRST DROP</h2>
-          <p>השתמש בקוד <b>YAHAV10</b> בעגלה.</p>
-        </div>
-        <div class="offer-code">
-          <span>YAHAV10</span>
-          <button id="copyCoupon">COPY</button>
-        </div>
-      </div>
-    </section>
-
-    <section class="section reviews-section" id="reviews">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <span class="micro">REAL VIBES</span>
-            <h2>אנשים <span>אוהבים</span> את זה</h2>
+            <button class="primary-btn add-to-cart" data-product-id="5">הוסף באנדל לעגלה <span>+</span></button>
           </div>
-          <p>ביקורות דמו בשביל להראות איך אזור Social Proof יכול להיראות.</p>
-        </div>
-
-        <div class="reviews-grid">
-          <article class="review">
-            <div class="review-top"><span class="stars">★★★★★</span><span>01</span></div>
-            <p>“החנות מרגישה הרבה יותר מקצועית מרוב האתרים שאני רואה. העגלה ממש חלקה.”</p>
-            <div class="review-user"><span>D</span><div><b>Daniel</b><small>Verified demo buyer</small></div></div>
-          </article>
-          <article class="review review-highlight">
-            <div class="review-top"><span class="stars">★★★★★</span><span>02</span></div>
-            <p>“הקטע עם הקופון והעיצוב הכהה נראה מטורף במובייל. מרגיש כמו מותג אמיתי.”</p>
-            <div class="review-user"><span>N</span><div><b>Noa</b><small>Verified demo buyer</small></div></div>
-          </article>
-          <article class="review">
-            <div class="review-top"><span class="stars">★★★★☆</span><span>03</span></div>
-            <p>“פשוט, נקי, מהיר. קל להבין איפה כל דבר נמצא ולא מסתבכים.”</p>
-            <div class="review-user"><span>I</span><div><b>Itay</b><small>Verified demo buyer</small></div></div>
-          </article>
         </div>
       </div>
     </section>
 
-    <section class="section faq-section" id="faq">
-      <div class="container faq-grid">
-        <div class="faq-title">
-          <span class="micro">NEED TO KNOW</span>
-          <h2>שאלות<br><span>לפני הקנייה</span></h2>
-          <p>כל מה שצריך לדעת בלי לחפש בשום מקום אחר.</p>
-        </div>
-
-        <div class="faq-list">
-          <details open>
-            <summary><span>01</span> האתר כבר מקבל תשלומים?<b>+</b></summary>
-            <p>לא. זו גרסת Front‑End לדמו. כדי לגבות כסף צריך שירות סליקה חיצוני מאובטח.</p>
-          </details>
-          <details>
-            <summary><span>02</span> אפשר להחליף את המוצרים?<b>+</b></summary>
-            <p>כן. כל המוצרים נמצאים בקובץ script.js ואפשר לשנות שם, מחיר, תמונה ותיאור.</p>
-          </details>
-          <details>
-            <summary><span>03</span> זה עובד בטלפון?<b>+</b></summary>
-            <p>כן. העיצוב בנוי בצורה רספונסיבית ומתאים למסכים קטנים.</p>
-          </details>
-          <details>
-            <summary><span>04</span> איפה משנים משלוחים והחזרות?<b>+</b></summary>
-            <p>מומלץ ליצור עמודי מדיניות אמיתיים לפני שמעלים חנות מסחרית.</p>
-          </details>
-        </div>
-      </div>
-    </section>
-
-    <section class="newsletter">
-      <div class="container newsletter-card">
+    <section class="section soft-section">
+      <div class="container model-note reveal">
         <div>
-          <span class="micro light">DON'T MISS THE NEXT DROP</span>
-          <h2>הצטרף לפני שכולם מגיעים.</h2>
+          <span class="eyebrow">חשוב לפני הזמנה</span>
+          <h2>התאמת הדגם היא משוערת.</h2>
         </div>
-        <form id="newsletterForm">
-          <input id="newsletterEmail" type="email" placeholder="האימייל שלך" required>
-          <button type="submit">JOIN THE DROP →</button>
-        </form>
+        <p>
+          לפי התמונות, הכיסויים עם מערך של 3 מצלמות נראים מתאימים למשפחת iPhone Pro / Pro Max
+          מדורות דומים, והכיסוי השקוף נראה מתאים ל־iPhone X / XS. בגלל שכמה דגמים דומים מאוד מבחוץ,
+          מומלץ לאשר התאמה לפני קנייה.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="container faq-wrap">
+        <div class="faq-title reveal">
+          <span class="eyebrow">FAQ</span>
+          <h2>שאלות קצרות</h2>
+        </div>
+        <div class="faq-list reveal delay-1">
+          <details open>
+            <summary>האתר כבר מחייב כרטיס אשראי?<span>+</span></summary>
+            <p>לא. כרגע זה אתר דמו/קטלוג. כדי לגבות תשלום אמיתי צריך לחבר שירות סליקה מאובטח.</p>
+          </details>
+          <details>
+            <summary>איך יודעים שהכיסוי מתאים לטלפון שלי?<span>+</span></summary>
+            <p>ההתאמות באתר משוערות לפי התמונות. לפני הזמנה מומלץ לאשר את דגם המכשיר המדויק.</p>
+          </details>
+          <details>
+            <summary>אפשר לקבל הנחה?<span>+</span></summary>
+            <p>כן. הקוד YAHAV10 נותן 10% הנחה בעגלת הקניות בדמו.</p>
+          </details>
+        </div>
       </div>
     </section>
   </main>
 
   <footer>
-    <div class="container footer-main">
-      <div class="footer-brand">
-        <a class="brand" href="#top">
-          <span class="brand-logo">Y</span>
-          <span class="brand-copy"><b>YAHAV</b><small>PREMIUM STORE</small></span>
+    <div class="container footer-grid">
+      <div>
+        <a class="brand" href="#home">
+          <span class="logo">Y</span>
+          <span class="brand-text"><b>YAHAV</b><small>PHONE ACCESSORIES</small></span>
         </a>
-        <p>Premium drops. Clean design. No boring stuff.</p>
+        <p>כיסויים ואביזרים במחירים קטנים ובלי בלגן.</p>
       </div>
       <div>
-        <b>SHOP</b>
-        <a href="#products">All products</a>
-        <a href="#products">Tech</a>
-        <a href="#products">Lifestyle</a>
+        <b>ניווט</b>
+        <a href="#products">מוצרים</a>
+        <a href="#bundle">מבצע</a>
+        <a href="#faq">שאלות</a>
       </div>
       <div>
-        <b>INFO</b>
-        <a href="#" data-toast="יש להוסיף מדיניות משלוחים אמיתית.">Shipping</a>
-        <a href="#" data-toast="יש להוסיף מדיניות החזרות אמיתית.">Returns</a>
-        <a href="#" data-toast="יש להוסיף מדיניות פרטיות אמיתית.">Privacy</a>
-      </div>
-      <div>
-        <b>CONTACT</b>
-        <a href="mailto:support@example.com">support@example.com</a>
-        <a href="#" data-toast="החלף בקישור לאינסטגרם שלך.">Instagram</a>
-        <a href="#" data-toast="החלף בקישור לטיקטוק שלך.">TikTok</a>
+        <b>מידע</b>
+        <a href="#" data-toast="יש להוסיף מדיניות משלוחים אמיתית.">משלוחים</a>
+        <a href="#" data-toast="יש להוסיף מדיניות החזרות אמיתית.">החזרות</a>
+        <a href="#" data-toast="יש להוסיף פרטי יצירת קשר.">יצירת קשר</a>
       </div>
     </div>
     <div class="container footer-bottom">
-      <span>© <span id="year"></span> YAHAV STORE</span>
-      <span>Built for the next drop.</span>
+      <span>© <span id="year"></span> Yahav Store</span>
+      <span>Demo storefront</span>
     </div>
   </footer>
 
   <div class="backdrop" id="backdrop"></div>
 
-  <aside class="cart-drawer" id="cartDrawer">
-    <div class="cart-top">
+  <aside class="cart" id="cart">
+    <div class="cart-head">
       <div>
-        <small>YOUR BAG</small>
-        <h3>עגלת הקניות</h3>
+        <small>YOUR CART</small>
+        <h3>עגלת קניות</h3>
       </div>
-      <button id="closeCartBtn">✕</button>
+      <button id="closeCart">✕</button>
     </div>
 
-    <div class="cart-progress">
-      <div class="progress-copy">
-        <span id="shippingMessage">הוסף מוצרים כדי לקבל משלוח חינם</span>
-        <b id="shippingPercent">0%</b>
+    <div class="shipping-box">
+      <div>
+        <span id="shippingMsg">הוסף מוצרים למשלוח חינם</span>
+        <b id="shippingPct">0%</b>
       </div>
-      <div class="progress-track"><i id="shippingProgress"></i></div>
+      <i><span id="shippingBar"></span></i>
     </div>
 
     <div class="cart-items" id="cartItems"></div>
 
-    <div class="coupon-row">
+    <div class="coupon">
       <input id="couponInput" placeholder="קוד קופון">
-      <button id="applyCouponBtn">APPLY</button>
+      <button id="couponBtn">הפעל</button>
     </div>
-    <p class="coupon-message" id="couponMessage"></p>
+    <p class="coupon-msg" id="couponMsg"></p>
 
     <div class="cart-summary">
       <div><span>סכום ביניים</span><b id="subtotal">₪0</b></div>
       <div><span>הנחה</span><b id="discount">−₪0</b></div>
       <div><span>משלוח</span><b id="shipping">₪0</b></div>
       <div class="total"><span>סה״כ</span><b id="total">₪0</b></div>
-      <button class="checkout" id="checkoutBtn">CHECKOUT <span>←</span></button>
-      <small>Demo only — no real payment is processed.</small>
+      <button class="checkout" id="checkout">המשך להזמנה <span>←</span></button>
+      <small>דמו בלבד — אין חיוב אמיתי.</small>
     </div>
   </aside>
 
   <div class="quick-modal" id="quickModal">
     <div class="quick-card">
       <button class="quick-close" id="quickClose">✕</button>
-      <div class="quick-image"><img id="quickImage" alt=""></div>
-      <div class="quick-copy">
-        <span class="micro" id="quickCategory"></span>
+      <div class="quick-photo product-photo">
+        <img id="quickImage" alt="">
+      </div>
+      <div class="quick-content">
+        <span class="eyebrow" id="quickCategory"></span>
         <h2 id="quickName"></h2>
-        <div class="quick-rating">★★★★★ <small id="quickRating"></small></div>
         <p id="quickDescription"></p>
-        <div class="quick-price"><strong id="quickPrice"></strong><del id="quickOldPrice"></del></div>
-        <button class="checkout" id="quickAddBtn">ADD TO CART <span>+</span></button>
+        <div class="compatibility" id="quickCompatibility"></div>
+        <div class="quick-price">
+          <strong id="quickPrice"></strong>
+          <del id="quickOldPrice"></del>
+        </div>
+        <button class="primary-btn" id="quickAdd">הוסף לעגלה <span>+</span></button>
       </div>
     </div>
   </div>
 
   <div class="checkout-modal" id="checkoutModal">
     <div class="checkout-card">
-      <span class="success-orb">✓</span>
-      <span class="micro">DEMO MODE</span>
-      <h2>העגלה מוכנה.<br>הסליקה עדיין לא מחוברת.</h2>
-      <p>כדי למכור באמת צריך לחבר ספק סליקה מאובטח. אל תשמור פרטי אשראי בקוד האתר או ב‑GitHub.</p>
-      <button id="checkoutOk">סבבה, הבנתי</button>
+      <div class="check">✓</div>
+      <span class="eyebrow">DEMO</span>
+      <h2>העגלה עובדת.</h2>
+      <p>כדי לקבל תשלום אמיתי צריך לחבר שירות סליקה מאובטח. אין לשמור פרטי אשראי בתוך GitHub או JavaScript.</p>
+      <button id="checkoutOk">הבנתי</button>
     </div>
   </div>
 
   <div class="toast" id="toast"></div>
-
   <script src="script.js"></script>
 </body>
 </html>
